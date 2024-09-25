@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog sobre el Box Model en CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .post {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .post h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .post img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+            border: 2px solid #ddd;
+        }
+
+        .post iframe {
+            width: 100%;
+            height: 500px;
+            margin: 20px 0;
+            border: none;
+        }
+
+        .post p {
+            margin-bottom: 20px;
+        }
+
+        .post blockquote {
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #ccc;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Blog sobre el Box Model en CSS</h1>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Artículos</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <div class="post">
+            <h2>¿Qué es el Box Model en CSS?</h2>
+            <p>El <strong>Box Model</strong> en CSS es un concepto esencial para entender cómo se diseñan y posicionan los elementos en una página web. Cada elemento de HTML se representa como una caja rectangular que consta de:</p>
+            <ul>
+                <li>Contenido</li>
+                <li>Padding (Relleno)</li>
+                <li>Border (Borde)</li>
+                <li>Margin (Margen)</li>
+            </ul>
+            <img src="https://via.placeholder.com/800x400" alt="Diagrama del Box Model">
+            <p>Este modelo de caja es clave para la disposición de los elementos en el diseño web moderno, y entenderlo es fundamental para crear interfaces de usuario efectivas.</p>
+
+            <blockquote>
+                "El Box Model es la base del diseño web con CSS. Controlar el tamaño, el espaciado y las posiciones correctamente hará que tus páginas se vean como desees."
+            </blockquote>
+
+            <p>A continuación, puedes ver un video explicativo sobre el Box Model.</p>
+
+            <iframe width="800" height="400" src="https://www.youtube.com/embed/Vx854s9YE78?si=DK6i8OdGsstH90Ic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
+
+        <div class="post">
+            <h2>Propiedades más usadas del Box Model</h2>
+            <p>En CSS, las propiedades del Box Model más comunes son:</p>
+            <ul>
+                <li><code>margin</code>: Espacio fuera de la caja del elemento.</li>
+                <li><code>padding</code>: Espacio entre el contenido y el borde del elemento.</li>
+                <li><code>border</code>: Define el borde de la caja.</li>
+                <li><code>width</code> y <code>height</code>: Definen el tamaño del contenido.</li>
+            </ul>
+            <img src="https://via.placeholder.com/800x400" alt="Ejemplo de las propiedades del Box Model">
+            <p>Además de estas propiedades básicas, es importante conocer la propiedad <code>box-sizing</code>, que controla cómo se calcula el tamaño total de una caja.</p>
+
+            <p>Para obtener más información, visita el <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model" target="_blank">sitio oficial de Mozilla</a>.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Blog sobre el Box Model en CSS &copy; 2024</p>
+    </footer>
+
+</body>
+</html>
