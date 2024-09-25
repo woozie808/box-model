@@ -54,6 +54,7 @@
 
         .post img {
             max-width: 100%;
+            border-radius: 2px;
             height: auto;
             display: block;
             margin: 20px 0;
@@ -84,6 +85,54 @@
             background-color: #333;
             color: white;
             margin-top: 20px;
+        }
+        .box1 {
+            width: 200px;
+            height: 150px;
+            padding: 20px;
+            margin: 10px;
+            border: 2px solid black;
+            background-color: lightblue;
+        }
+
+        .box2 {
+            width: 250px;
+            height: 100px;
+            padding: 10px;
+            margin: 20px;
+            border: 3px dashed red;
+            background-color: lightgreen;
+        }
+
+        .box3 {
+            width: 150px;
+            height: 150px;
+            padding: 15px;
+            margin: 5px;
+            border: 5px double orange;
+            background-color: lightcoral;
+            box-sizing: border-box; /* Incluye el borde y padding en el tamaño total */
+        }
+
+        .box4 {
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+            padding: 20px;
+            margin: 15px;
+            border: 2px solid purple;
+            background-color: lightyellow;
+            overflow: auto; /* Permite scroll si el contenido excede */
+        }
+
+        /* Extra: Flexbox para centrar las cajas */
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
     </style>
 </head>
@@ -134,6 +183,24 @@
 
             <p>Para obtener más información, visita el <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model" target="_blank">sitio oficial de Mozilla</a>.</p>
         </div>
+        <div class="box1">
+            <p>Caja 1: azul con borde negro</p>
+        </div>
+    
+        <div class="box2">
+            <p>Caja 2: verde con borde rojo punteado</p>
+        </div>
+    
+        <div class="box3">
+            <p>Caja 3: coral con borde naranja doble</p>
+        </div>
+    
+        <div class="box4">
+            <p>Caja 4: amarilla con borde morado. El contenido excede y puedes hacer scroll en esta caja.</p>
+            <p>Contenido adicional para activar el scroll.</p>
+        </div>
+    
+    
     </div>
 
     <footer>
